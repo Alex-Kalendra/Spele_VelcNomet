@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
+using System.Collections.Generic;
 
 public class MiniTimer : MonoBehaviour
 {
@@ -20,6 +22,7 @@ public class MiniTimer : MonoBehaviour
 			currentTime += Time.deltaTime;
 			UpdateTimerText();
 		}
+	
 	}
 
 	public void StartTimer()

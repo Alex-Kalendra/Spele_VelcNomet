@@ -9,6 +9,7 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 	private Vector2 vietasIzm, velkObjIzm;
 	private float xIzmeruStarp, yIzmeruStarp;
 	public Objekti objektuSkipts;
+	public int masinuDaudzums = 0;
 
 
     public void OnDrop(PointerEventData eventData)
@@ -45,6 +46,8 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 				{
 					Debug.Log("Nolikts pareizajā vietā!");
 					objektuSkipts.vaiIstajaVieta = true;
+					masinuDaudzums++;
+
 					
 					eventData.pointerDrag.
 						GetComponent<RectTransform>().anchoredPosition =
